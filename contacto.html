@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,500" rel="stylesheet">
+</head>
+
+<body>
+
+    <section id="home" data-spy="scroll" data-target=".navbar-fixed-top">
+        <div class="container-fluid contacmap">
+            <div class="row">
+                <div class="col-sm-4 contactos">
+                    <h3 class="titulo">CONTACTOS</h3>
+                    <div class="caja">
+                       
+                        <p>La Libertad-Trujillo</p>
+                         <hr class="separator">
+                        <small>Juan de la Cruz <i class="fa fa-phone" aria-hidden="true"></i> (01)-44747</small>
+                    </div>
+                    
+                    <div class="caja">
+                        <p>La Libertad-Trujillo</p>
+                          <hr class="separator">
+                        <small>Juan de la Cruz <i class="fa fa-phone" aria-hidden="true"></i> (01)-44747</small>
+                    </div>
+                   
+                    <div class="caja">
+                        <p>La Libertad-Trujillo</p>
+                         <hr class="separator">
+                        <small>Juan de la Cruz <i class="fa fa-phone" aria-hidden="true"></i> (01)-44747</small>
+                    </div>
+                    
+                    <div class="caja">
+                        <p>La Libertad-Trujillo</p>
+                        <hr class="separator">
+                        <small>Juan de la Cruz <i class="fa fa-phone" aria-hidden="true"></i> (01)-44747</small>
+                    </div>
+                    <div class="caja">
+                        <p>La Libertad-Trujillo</p>
+                        <hr class="separator">
+                        <small>Juan de la Cruz <i class="fa fa-phone" aria-hidden="true"></i> (01)-44747</small>
+                    </div>
+                    <div class="caja">
+                        <p>La Libertad-Trujillo</p>
+                        <small>Juan de la Cruz <i class="fa fa-phone" aria-hidden="true"></i> (01)-44747</small>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="contact-section">
+                        <div class="contact-form">
+                            <form class="ajax-form" id="comment-form" method="post" action="">
+                                <div class="form-group">
+                                    <input type="text" id="sender" name="sender">
+                                    <label for="sender">Nombre</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="lastname" id="lastname">
+                                    <label for="lastname">Apellidos</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" />
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="form-group">
+                                <input type="text" name="phone" id="phone" value="" maxlength="9" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
+                                    <label for="phone">Celular</label>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" name="message"></textarea>
+                                    <label for="message">Mensaje</label>
+                                </div>
+                                <input style="display:none" id="test2" type="checkbox"><label class="condiciones" for="test2"> Acepto las <strong>Condiciones del servicio</strong>  y la política de privacidad de Company</label>
+                                <button type="submit" name="submit" class="boton">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mapa">
+                    <div id="mapa">
+    			<div id="map"></div>
+			</div>
+			<div class="col-md-4" id="cajaDireccion">
+                <i class="fa fa-map-marker fa-2x col-md-2" aria-hidden="true"></i><p class="col-md-10">Av. República de Panamá 5695.Surquillo.<br>Lima – Perú.</p>         
+            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul class="foot">
+        <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube-play fa-2x"></i></a></li>
+        </ul>
+        <p style="color: white;margin:50px 30px ">COMPANY 2017 - Copyright © All Rights Reserved</p>
+    </footer>
+
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOOf6CdvXjzAl3NgzO79fdNZTV4Nx6GHM&callback=initMap"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/plugins/jquery.validate.min_v1.11.1.js"></script>
+    <script src="js/mapa.js"></script>
+    <script src="js/contacto.js"></script>
+</body>
+
+</html>
